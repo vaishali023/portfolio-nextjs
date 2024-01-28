@@ -1,35 +1,46 @@
 import { Socials } from '@/constants'
 import Image from 'next/image'
-import React from 'react'
+"use client";
+import { NavLinks } from '@/constants';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
+import Transition from './Transition';
 
 const Navbar = () => {
+  const [isRouting, setIsRouting] = useState(false);
+    const path = usePathname();
+    const [prevPath, setPrevPath] = useState("/");
+
+    useEffect(() => {
+        if(prevPath !== path) {
+             setIsRouting(true);
+        }
+    },[path, prevPath]);
+
+   useEffect(() => {
+    if(isRouting) {
+        setPrevPath(path);
+        const timeout = setTimeout(() => {
+            setIsRouting(false)
+        }, 1200)
+        return() => clearTimeout(timeout)
+    }
+   },[isRouting])
+
   return (
-    <div className='fixed top-0 z-[40] w-full h-[100px] bg-transparent flex justify-between items-center px-10 md:px-20'>
-        <div className='flex flex-row gap-3 items-center'>
-            <div className='relative'>
-            {/* <Image
-             src='/horseLogo.jpg'
-             alt='Logo'
-             height={40}
-             width={40}
-             className='w-full h-full object-contain rounded-full'
-             /> */}
-             </div>
-            <h1 className='text-white text-[25px] font-semibold'>Vaishali</h1>
-        </div>
-        <div className='flex flex-row gap-5 mb-2'>
-            {Socials.map((social) => (
-                 <Image 
-                 key={social.name}
-                 src={social.src}
-                 alt={social.name}
-                 width={28}
-                 height={28}
-                 />
-            )
-               
-            )}
-        </div>
+    <div 
+    style={{left: "10%"}}
+     className='absolute z-[50] -bottom-20 w-[50%] md:w-[20%] max-h-[150px] rounded-full flex justify-between items-center border border-white py-7'>
+        {isRouting && <Transition/>}
+        {NavLinks.map((nav) => (
+            <Link key={nav.name}
+            href={nav.link}
+            className='mb-16 pl-4 min-w-[20%]'
+            >
+                <nav.icon className={`w-[24px] h-[24px] ${path === nav.name ? "text-purple-800": "text-white"}`} />
+            </Link>
+        ))}
         </div>
   )
 }
