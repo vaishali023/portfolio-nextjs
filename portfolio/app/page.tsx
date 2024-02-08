@@ -5,11 +5,13 @@ export default function Home() {
   return (
     <main className='w-screen h-screen relative'>
       <div className='flex items-center w-full h-full bg-cover bg-center' style={{backgroundImage: 'url(/assets/main-bg.webp)'}}>
-        <div className='pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]'>
-          <h1 className="text-[50px] font-semibold text-white">Web Design &
-          <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
+        <div className='pl-0 md:pl-20 pb-26 md:pb-10 flex flex-col gap-5 z-[10] max-w-[750px]'>
+          <h1 className="text-[50px] font-semibold text-white">Design <br/>
+          <span className='absolute h-1 w-full flex items-end z-10 left-0'>&
+            </span>         
+             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
             {" "}
-              Web Development
+            Development
           </span>
           </h1>
           <p className='text-gray-200 hidden md:block'>
