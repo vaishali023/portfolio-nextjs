@@ -33,7 +33,7 @@ const Navigation = () => {
             {/* Left Section */}
             <div className='flex flex-row gap-3 items-center'>
                 <div className='relative'></div>
-                <h1 className='text-white text-[25px] font-semibold' style={{ fontFamily: "'Ubuntu Mono', 'monospace'" }}>Vaishali Chaudhary</h1>
+                <h1 className='text-white text-[30px] ' style={{ fontFamily: "'Ubuntu Mono', 'monospace'" }}>Vaishali Chaudhary</h1>
             </div>
 
             {/* Right Section */}

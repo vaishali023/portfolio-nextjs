@@ -1,20 +1,22 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import './globals.css'
+
 
 export default function Home() {
   return (
     <main className='w-screen h-screen relative'>
       <div className='flex items-center w-full h-full bg-cover bg-center' style={{backgroundImage: 'url(/assets/main-bg.webp)'}}>
-        <div className='pl-0 md:pl-20 pb-26 md:pb-10 flex flex-col gap-5 z-[10] max-w-[750px]'>
-          <h1 className="text-[50px] font-semibold text-white">Design <br/>
-          <span className='absolute h-1 w-full flex items-end z-10 left-0'>&
-            </span>         
-             <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'>
-            {" "}
+        <div className='pl-0 md:pl-20 md:mt-6 pb-26 md:pb-10 flex flex-col z-[10] max-w-[780px] leading-none fixed'>
+          <h1 className="text-[120px]  text-white"  style={{ fontFamily: "'Righteous', 'monospace'"}}>Design</h1> 
+          <span className='relative font-semibold flex-initial text-[70px] text-white' style={{left: '50%', top: '35%' }}>&</span>
+            <h1 className='text-[120px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ' 
+            style={{ fontFamily: "'Righteous', 'monospace'"}}
+            >
             Development
-          </span>
           </h1>
-          <p className='text-gray-200 hidden md:block'>
+         
+          <p className='text-gray-200 hidden md:block z-[10] mb-5 mt-5 text-[20px]'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quibusdam totam libero id. Molestias distinctio, maiores dolores aliquid modi reiciendis ipsam eligendi nulla voluptate qui eius molestiae quam corrupti unde.
           </p>
           <div className='flex-col md:flex-row hidden md:flex gap-5'>
@@ -29,7 +31,7 @@ export default function Home() {
               <div className='absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20'/>
               Contact me
             </Link>
-      
+
           </div>
         </div>
       </div>
