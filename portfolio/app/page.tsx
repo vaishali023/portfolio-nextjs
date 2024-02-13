@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <main className='w-screen h-screen relative'>
       <div className='flex items-center w-full h-full bg-cover bg-center' style={{backgroundImage: 'url(/assets/main-bg.webp)'}}>
-        <div className='pl-0 md:pl-20 md:mt-6 pb-26 md:pb-10 flex flex-col z-[10] max-w-[780px] leading-none fixed'>
-          <h1 className="text-[120px]  text-white"  style={{ fontFamily: "'Righteous', 'monospace'"}}>Design</h1> 
-          <span className='relative font-semibold flex-initial text-[70px] text-white' style={{left: '50%', top: '35%' }}>&</span>
+        <div className='pl-0 md:pl-20 md:mt-6 pb-6 md:pb-10 flex flex-col z-[10] max-w-[780px] leading-none fixed'>
+          <h1 className="text-[120px]  text-white"  style={{ fontFamily: "'teko', 'monospace'"}}>Design</h1> 
+          <span className='relative font-semibold flex-initial text-[30px] text-white' style={{left: '55%', top: '35%' }}>&</span>
             <h1 className='text-[120px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ' 
-            style={{ fontFamily: "'Righteous', 'monospace'"}}
+            style={{ fontFamily: "'teko', 'monospace'"}}
             >
             Development
           </h1>
@@ -20,14 +20,17 @@ export default function Home() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quibusdam totam libero id. Molestias distinctio, maiores dolores aliquid modi reiciendis ipsam eligendi nulla voluptate qui eius molestiae quam corrupti unde.
           </p>
           <div className='flex-col md:flex-row hidden md:flex gap-5'>
-            <Link href='/my-skills' className = 'rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
+            <Link href='/my-skills' 
+            className = 'rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
               Learn more
             </Link>
-            <Link href='/my-projects' className = 'rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
+            <Link href='/my-projects' 
+            className = 'rounded-[20px] group relative bg-transparent border border-white hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
               <div className='absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20'/>
               My projects
             </Link>
-            <Link href='/contact-me' className = 'rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
+            <Link href='/contact-me' 
+            className = 'rounded-[20px] group relative border border-white hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
               <div className='absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20'/>
               Contact me
             </Link>

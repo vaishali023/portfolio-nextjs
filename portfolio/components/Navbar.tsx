@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className='fixed bottom-10 right-0 z-[40] w-full h-[100px] bg-transparent flex justify-end items-end px-10 md:px-20'>
-      <div className='flex flex-row gap-3 mb-2'>
+      <div className='flex flex-row gap-8 mb-2'>
         {Socials.map((social) => (
           <Image 
             key={social.name}

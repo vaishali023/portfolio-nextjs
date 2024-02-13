@@ -33,16 +33,18 @@ const Navigation = () => {
             {/* Left Section */}
             <div className='flex flex-row gap-3 items-center'>
                 <div className='relative'></div>
-                <h1 className='text-white text-[30px] ' style={{ fontFamily: "'Ubuntu Mono', 'monospace'" }}>Vaishali Chaudhary</h1>
+                <h1 className='text-white text-[25px] font-normal ' style={{ fontFamily: "'Righteous', 'monospace'"}}>Vaishali Chaudhary</h1>
             </div>
 
             {/* Right Section */}
             <div className='flex flex-row gap-5 items-center relative mb-2 mt-2'>
                 {isRouting && <Transition />}
                 {NavLinks.map((nav) => (
-                    <Link key={nav.name} href={nav.link} className='pr-4 pl-4 min-w-[20%]'>
-                        <nav.icon className={`w-[24px] h-[24px] ${path === nav.name ? 'text-purple-800' : 'text-white'}`} />
-                    </Link>
+                   <Link key={nav.name} href={nav.link} 
+                    className={`pr-4 pl-4 min-w-[20%] text-[20px] font-semibold ${path === nav.name ? 'text-purple-800' : 'text-white'}`}>
+                       {nav.title}
+                
+               </Link>
                 ))}
             </div>
         </div>
