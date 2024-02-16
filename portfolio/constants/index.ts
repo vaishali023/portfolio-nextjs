@@ -95,22 +95,22 @@ export const Projects = [
   {
     title: "Modern Nextjs Website",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "./assets/NextWebsite.png",
+    src: "./assets/echogram.png",
   },
   {
     title: "Space Themed Website",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "./assets/SpaceWebsite.png",
+    src: "./assets/crwn.png",
   },
   {
     title: "Modern Nextjs Portfolio",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "./assets/WebPortfolio.png",
+    src: "./assets/gallery.png",
   },
   {
     title: "Matrix themed Website",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "./assets/Matrix.png",
+    src: "./assets/vagary.png",
   },
 ];
 

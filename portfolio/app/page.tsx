@@ -16,9 +16,11 @@ export default function Home() {
             Development
           </h1>
          
-          <p className='text-gray-200 hidden md:block z-[10] mb-5 mt-5 text-[20px]'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quibusdam totam libero id. Molestias distinctio, maiores dolores aliquid modi reiciendis ipsam eligendi nulla voluptate qui eius molestiae quam corrupti unde.
-          </p>
+          <p className='text-gray-200 hidden md:block z-[10] mb-5 mt-5 text-[18px] leading-[26px] text-justify'>
+          🌿 Greetings! I'm Vaishali Chaudhary, a Frontend Engineer with a two-year journey immersed in the dynamic world of web development. 🚀
+          Navigating the dynamic landscapes of HTML5, CSS3, and JavaScript, my commitment goes beyond mere functionality. I specialize in crafting robust and efficient user interfaces using cutting-edge technologies like TypeScript and Next.js.
+          I love Nature and Art.
+           Let's turn ideas into captivating realities. 💻🎨          </p>
           <div className='flex-col md:flex-row hidden md:flex gap-5'>
             <Link href='/my-skills' 
             className = 'rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]'>
