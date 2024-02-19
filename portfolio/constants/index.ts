@@ -80,15 +80,18 @@ export const Socials = [
   {
     name: "Discord",
     src: "./assets/discord.svg",
+    link: "https://www.discordapp.com/users/718017049569263667",
     
   },
   {
     name: "Facebook",
     src: "./assets/facebook.svg",
+    link: ""
   },
   {
     name: "Instagram",
     src: "./assets/instagram.svg",
+    link: "https://www.instagram.com/vaishalii__23?igsh=dHZyenRzcXF1MXRh "
   },
 ];
 export const Projects = [
