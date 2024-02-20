@@ -86,7 +86,7 @@ export const Socials = [
   {
     name: "Facebook",
     src: "./assets/facebook.svg",
-    link: ""
+    link: "https://www.facebook.com/vaishali.chaudhary.01?mibextid=LQQJ4d"
   },
   {
     name: "Instagram",
@@ -96,23 +96,23 @@ export const Socials = [
 ];
 export const Projects = [
   {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Social Nextjs Website",
+    text: "A modern social app with a stunning UI with a native mobile feel, a special tech stack, an infinite scroll feature, and amazing performance using React JS, Appwrite, TypeScript, and more.",
     src: "./assets/echogram.png",
   },
   {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Crwn Clothing E-commerce App",
+    text: "E-commerce app with Redux, Hooks, Stripe, Firebase.",
     src: "./assets/crwn.png",
   },
   {
-    title: "Modern Nextjs Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Photo Gallery",
+    text: "A Typescript Application to display a photo Gallery with Recently added and Favorited pictures. User can select an image and favorite, unfavorite or delete it",
     src: "./assets/gallery.png",
   },
   {
-    title: "Matrix themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    title: "Travel Blog",
+    text: "Travel Blog Website in which admin can add, delete and edit the blogs. For users, its read-only. Users can find reliable sources to book hotels, insurance, etc.",
     src: "./assets/vagary.png",
   },
 ];

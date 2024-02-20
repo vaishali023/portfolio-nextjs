@@ -8,11 +8,10 @@ export default function Home() {
     <main className='w-screen h-screen relative'>
       <div className='flex items-center w-full h-full bg-cover bg-center' style={{backgroundImage: 'url(/assets/main-bg.webp)'}}>
         <div className='pl-0 md:pl-20 md:mt-6 pb-6 md:pb-10 flex flex-col z-[10] max-w-[780px] leading-none fixed'>
-          <h1 className="text-[120px]  text-white"  style={{ fontFamily: "'teko', 'monospace'"}}>Design</h1> 
-          <span className='relative font-semibold flex-initial text-[30px] text-white' style={{left: '55%', top: '35%' }}>&</span>
-            <h1 className='text-[120px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 ' 
-            style={{ fontFamily: "'teko', 'monospace'"}}
-            >
+          <h1 className="text-[120px]  text-white tracking-tight"  style={{ fontFamily: "'Barlow Semi Condensed', 'monospace'"}}>Design</h1> 
+          <span className='relative font-semibold flex-initial text-[35px] text-white' style={{left: '44%', top: '35%' }} >&</span>
+            <h1 className='text-[120px] text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 tracking-tight	 ' 
+            style={{ fontFamily: "'Barlow Semi Condensed', 'monospace'"}}            >
             Development
           </h1>
          
