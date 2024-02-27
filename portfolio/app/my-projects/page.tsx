@@ -1,3 +1,4 @@
+"use client"
 import ProjectCard from '@/components/ProjectCard'
 import { Projects } from '@/constants'
 import React from 'react'
