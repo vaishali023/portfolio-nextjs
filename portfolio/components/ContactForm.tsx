@@ -23,7 +23,7 @@ const ContactForm = () => {
   return (
     <div className="max-w-md mx-auto">
       {isSubmitted ? (
-        <div className="text-center">
+        <div className="max-w-md mx-auto text-center relative bottom-20">
           <h2 className='text-2xl font-bold mb-6 text-white'>Thank you for reaching out!</h2>
           <p className="text-lg text-gray-200">I appreciate your message and will get back to you as soon as possible.</p>
         </div>
