@@ -4,7 +4,6 @@ import { Resend } from "resend";
  import { getErrorMessage, validateString } from "@/lib/utils";
 import React from "react";
 import ContactFormEmail from "@/email/contact-form-email";
-
 const resend = new Resend(process.env.RESEND_API_KEY);
 type SendEmailResponse = { data?: any; error?: string };
 
@@ -36,10 +35,11 @@ export const sendEmail = async (formData: FormData): Promise<SendEmailResponse> 
       }),
     });
     return { data };
-  } catch (error: unknown) {
+  } catch (error) {
+    // Log the error for debugging purposes
+    console.error("Error sending email:", error);
     return {
-      error: getErrorMessage(error),
+      error: "An error occurred while sending the email. Please try again later.",
     };
   }
 }
-
