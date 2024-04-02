@@ -34,12 +34,11 @@ export const sendEmail = async (formData: FormData): Promise<SendEmailResponse> 
         senderEmail: senderEmail as string, // assert senderEmail as string
       }),
     });
-    return { data };
-  } catch (error) {
-    // Log the error for debugging purposes
-    console.error("Error sending email:", error);
+     return { data };
+  } catch (error: unknown) {
     return {
-      error: "An error occurred while sending the email. Please try again later.",
+      error: getErrorMessage(error),
     };
   }
+
 }
