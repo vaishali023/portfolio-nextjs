@@ -1,10 +1,10 @@
-const express = require('express');
-const { sendEmail } = require('./sendEmail'); // Import your sendEmail function
+import express, { Request, Response, NextFunction } from 'express';
+import { sendEmail } from '@/actions/sendEmail';
 
 const app = express();
 
 // Middleware to enable CORS
-app.use((req, res, next) => {
+app.use((req: Request, res: Response, next: NextFunction) => {
   res.setHeader('Access-Control-Allow-Origin', 'https://www.vaishalicodes.com');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
@@ -12,7 +12,7 @@ app.use((req, res, next) => {
 });
 
 // Endpoint for sending emails
-app.post('/send-email', async (req, res) => {
+app.post('/send-email', async (req: Request, res: Response) => {
   try {
     const formData = req.body; // Assuming you're sending form data in the request body
     const result = await sendEmail(formData);
